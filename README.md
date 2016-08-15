@@ -38,4 +38,4 @@ An attempt is made to only erase devices that report a serial number when interr
 
 Currently the script expects to be run on Debian Jessie, as it contains a static list of the dependencies needed for <tt>nwipe</tt>. This will be fixed in a future release. The resulting initrd image and kernel however may be used on any machine, not just Debian Jessie systems.
 
-Future versions of this software will use ATA Secure Erase as a preference, before falling back to <tt>nwipe</tt>. This is not yet implemented.
+Future versions of this software will use ATA Secure Erase (including unfreezing disks as needed) as a preference, before falling back to <tt>nwipe</tt>. This is not yet implemented.

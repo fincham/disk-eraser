@@ -85,7 +85,7 @@ any=0
 cd /tmp/disks
 ls -1 | while read serial; do
     any=1
-    size="`grep "device size" $serial | grep "1024" | sed -e 's/[^:]*: *'//'`"
+    size="`grep "device size" $serial | grep "1024" | sed -e 's/[^:]*: *//'`"
     device="`head -n 1 $serial`"
 
     if grep "not" $serial | grep "frozen" > /dev/null; then

@@ -7,7 +7,7 @@ Builds a Debian initrd image containing nwipe configured to erase all available 
 Script must be run with the path to a copy of a suitable Debian initrd image, for instance:
 
 <pre>
-fincham@build:~$ sudo apt-get install nwipe
+fincham@build:~$ sudo apt-get install nwipe hdparm
 fincham@build:~$ cp /boot/initrd.img-`uname -r` ./initrd.img
 fincham@build:~$ cp /boot/vmlinuz-`uname -r` ./vmlinuz
 
